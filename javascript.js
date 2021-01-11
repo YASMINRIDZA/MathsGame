@@ -102,12 +102,14 @@ document.getElementById("question").innerHTML = x + " x " + y;
     //store answers in array 
     var answers = [correctAnswer];
     
+    //loop for 4 boxes. 
     for(i=1;i<5;i++){
         do{
            wrongAnswer = (Math.floor(Math.random() * 10) + 1)*(Math.floor(Math.random() * 10) + 1);
             
         }while(answers.indexOf(wrongAnswer)>-1)
      
+        //however, for occupied box with right answer, it wont push the wrong answers to the answers array.
         if(i != correctPosition) {
          document.getElementById("box"+i).innerHTML = wrongAnswer;
             
@@ -117,9 +119,10 @@ document.getElementById("question").innerHTML = x + " x " + y;
        
 }
 
-
+//user interaction to pick the right answer
 for(i=1; i<5; i++){
     document.getElementById("box"+i).onclick = function(){
+        //run this code only if you are playing. if game over, the code won't run
         if(playing==true){
                   if(this.innerHTML == correctAnswer){
             score++;
@@ -133,7 +136,7 @@ for(i=1; i<5; i++){
                 setTimeout(function(){
                     hide("correct");
                 },1000)
-
+                
                 generateQuestion();
 
 
