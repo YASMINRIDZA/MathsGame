@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle, #60c0cc, #ccc);
+}
+
+#container {
+    height: 500px;
+    width: 700px;
+    background-color: cornflowerblue;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 0px #33436f;
+    -moz-box-shadow: 10px 10px 10px 0px #33436f;
+    -webkit-box-shadow: 10px 10px 10px 0px #33436f;
+    position: relative;
+}
+
+
+#score {
+    height: 20px;
+    width: 80px;
+    background-color: #8bbac3;
+    padding: 10px;
+    position: absolute;
+    left: 600px;
+}
+
+#correct {
+    position: absolute;
+    left:350px;
+    padding: 10px;
+    background-color: darkcyan;
+    display: none;
+}
+
+#wrong {
+    position: absolute;
+    left:350px;
+    padding: 10px;
+    background-color: red;
+    display: none;
+}
+
+#question {
+    background-color: #91c640;
+    height: 200px;
+    width: 600px;
+    margin: 60px auto 10px auto;
+    font-family: arial;
+    font-size: 150px;
+    text-align: center;
+    line-height: 190px;
+}
+
+#instructor {
+    background-color: #9a6da2;
+    height: 50px;
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+#choices {
+    width: 600px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+.box, #startreset {
+    background-color: #f0d3ee;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 66px;
+    text-align: center;
+    line-height: 96px;
+    cursor: pointer;
+    box-shadow: 4px 4px 6px 0 #8c898d;
+    -moz-box-shadow: 4px 4px 6px 0 #8c898d;
+    -webkit-box-shadow: 4px 4px 6px 0 #8c898d;
+    position: relative;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset:hover {
+    background-color: #83ceb7;
+}
+
+.box:active, #startreset:active {
+    box-shadow: 0px 0px;
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0;
+}
+
+#startreset {
+    height: 40px;
+    background-color: aliceblue;
+    margin-left: 300px;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+#timeremaining {
+    background-color: chartreuse;
+    padding: 4px;
+    width: 185px;
+    position: absolute;
+    left: 500px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 #274d4d;
+    -moz-box-shadow: 2px 2px 5px 0 #274d4d;
+    -webkit-box-shadow: 2px 2px 5px 0 #274d4d;
+    display: none;
+}
+
+#gameover {
+    background: linear-gradient(#e0a84e, #5f3c98);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 90px;
+    width: 500px;
+    height: 300px;
+    font-size: 2.5em;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    z-index: 2;
+    display: none;
+}
