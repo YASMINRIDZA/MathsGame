@@ -10,8 +10,8 @@ document.getElementById("startreset").onclick = function() {
     
     //if we are playing
     if(playing==true){
-        location.reload(); //reload page //returns to initial state
-    }else{ //if we are not playing
+        location.reload(); //reload page //returns to initial state //means that all the contents will become empty
+    }else{ //if we are not playing // means the content is ALREADY IN the initial state
         
         //change mode to playing
         playing = true;
