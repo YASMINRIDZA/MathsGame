@@ -103,6 +103,7 @@ document.getElementById("question").innerHTML = x + " x " + y;
     var answers = [correctAnswer];
     
     //loop for 4 boxes. 
+    //as long as the wrong ans generated IS included in the ans array (>-1 which is 0,1,2....), then execute do. if wrong ans is negative, then stop loop.
     for(i=1;i<5;i++){
         do{
            wrongAnswer = (Math.floor(Math.random() * 10) + 1)*(Math.floor(Math.random() * 10) + 1);
