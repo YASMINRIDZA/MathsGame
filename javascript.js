@@ -46,7 +46,9 @@ document.getElementById("startreset").innerHTML = "Reset Game";
     
 }
 
+/*in this function, for every 1s/1000ms, the time remaining will decrease by 1*/
 function startCountdown(){
+    
     action = setInterval(function(){
         timeremaining -= 1;
         
